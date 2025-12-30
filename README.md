@@ -3,9 +3,10 @@
 ### app demo: 
 https://drive.google.com/file/d/15orHxKexqknvuUIVHHB28h_xJnIIGS4w/view?usp=sharing
 
+---
+Techniques Implemented: Prompt Engineering, Python Coding, Gradio UI Developement, 
 
 ---
-
 ## Objective Statement
 The objective of **AI Product Hub** is to provide a **domain-constrained, Product-Management–specific AI agent** that interprets and responds to user queries **strictly within the context of Product Management**.
 The system is designed to reduce generic LLM behavior by enforcing **role grounding, contextual framing, and controlled generation**, while offering an interactive UI and response complexity control for different PM maturity levels.
