@@ -4,12 +4,48 @@
 https://drive.google.com/file/d/15orHxKexqknvuUIVHHB28h_xJnIIGS4w/view?usp=sharing
 
 ---
-Techniques Implemented: Prompt Engineering, Python Coding, Gradio UI Developement, 
 
----
 ## Objective Statement
 The objective of **AI Product Hub** is to provide a **domain-constrained, Product-Management–specific AI agent** that interprets and responds to user queries **strictly within the context of Product Management**.
 The system is designed to reduce generic LLM behavior by enforcing **role grounding, contextual framing, and controlled generation**, while offering an interactive UI and response complexity control for different PM maturity levels.
+
+---
+
+## Techniques Implemented and delivered
+* **Prompt Engineering**
+
+  * System-level role grounding
+  * Structured message ordering (`system → user`)
+  * Controlled generation via temperature tuning
+
+* **Python Application Development**
+
+  * Model invocation logic
+  * Request/response handling
+  * Parameter configuration and execution flow
+
+* **Gradio UI Development**
+
+  * Interactive frontend for user input
+  * Real-time response rendering
+  * Abstraction of prompt complexity from end users
+
+* **Context Constraining / Domain Grounding**
+  * Restricting model outputs to Product Management concepts using system prompts
+  * Prevents cross-domain drift (engineering, marketing, generic AI responses)
+
+* **Prompt Orchestration**
+  * Deterministic assembly of messages
+  * Controlled injection order to preserve role priority
+  * Separation of system instructions and user intent
+
+* **Controlled Generation & Response Calibration**
+  * Balancing determinism and creativity using temperature
+  * Reducing variance in multi-turn reasoning
+
+* **Human-Centered AI Design**
+  * Complexity scaling to match user expertise
+  * UI-driven interaction instead of raw prompt exposure
 
 ---
 
@@ -114,17 +150,6 @@ LLM Inference
    ↓
 PM-Constrained Response
 ```
-
----
-
-### Prompt Orchestration Layer
-
-* The system prompt acts as a **hard context boundary**, defining:
-
-  * Allowed reasoning scope
-  * Vocabulary expectations
-  * Perspective constraints
-* User input is always injected **after** role grounding to prevent context override.
 
 ---
 
