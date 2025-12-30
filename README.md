@@ -149,8 +149,8 @@ PM-Constrained Response
 ## What This Project Is 
 
 ✔ A **single-domain, role-locked AI agent**
-✔ A **prompt-engineered PM assistant**, not a chatbot
-✔ A **controlled-generation system**, not autonomous AI
+✔ A **prompt-engineered PM assistant**,
+✔ A **controlled-generation system**,
 
 ## What This Project Is Not
 
